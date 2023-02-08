@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <h2>To embed a simple audio/video file onto the page.</h2>
+        <!--Add the path to the audio file to an appropriate attribute to embed it on the page. 
+        The audio is called audio.mp3, and it is in a folder inside the current folder called media.
+    -->
+        <p><b>--Audio--</b></p>
+
+        <!-- • Add an attribute to make browsers display some default controls. 
+             • Add some appropriate fallback text for browsers that don't support <audio>.-->
+        <audio controls autoplay muted>
+            <source src="media/audio.mp3" type="audio/mpeg">
+            <!-- Add some appropriate fallback text for browsers that don't support <audio>.-->
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br><br>
+
+    <div>
+        <p><b>--Video--</b></p>
+        <!--
+            • Add some appropriate fallback text for browsers that don't support <video>. 
+            • Add multiple sources, containing the paths to the video files. 
+              The files are called video.mp4 and video.webm, and are in a folder inside the current folder called media. 
+            • Give the <video> a width and height equal to its intrinsic size (320 by 240 pixels).
+            • Make the video muted by default.      
+         -->
+        <video width="320" height="240" controls muted>
+            <source src=media/video.webm type=video/webm>
+            <source src=media/video.mp4 type=video/mp4>
+            <!--• Display the text tracks contained in the media folder, in a file called subtitles_en.vtt, when the video-->
+            <track src="media/subtitles_en.vtt" label="English" kind="captions" srclang="en-us" default >
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+
+</html>
