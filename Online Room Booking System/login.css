@@ -1,0 +1,12 @@
+body{
+    padding: 7rem;
+    background: url(Image/gallery-img-6.webp) no-repeat center center fixed;
+    background-size: cover;
+}
+main{
+    width: 100%;
+    max-width: 400px;
+    padding: 3rem 4rem;
+    margin: auto;
+    border-radius: 20px;
+}
